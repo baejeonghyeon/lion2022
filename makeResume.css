@@ -1,0 +1,16 @@
+footer{
+  text-align: center;
+  background-color: #121212;
+  color: #919191;
+  font-size: 12px;
+}
+
+.mainbox{
+  border: 5px solid #eeeeee;
+  width: 1000px;
+  text-align: right;
+  padding: 30px;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;    /* 가운데 정렬*/
+}

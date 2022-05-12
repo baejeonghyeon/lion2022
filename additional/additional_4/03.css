@@ -1,0 +1,7 @@
+.yellow-bg{
+  background-color: yellow;
+}
+
+.hovering:hover{
+  background-color: yellow;
+}

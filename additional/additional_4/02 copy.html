@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="02.css">
+</head>
+
+<body>
+  <div class="alert-box" id="alert">
+    <p id="title">Alert Box</p>
+    <button onclick="closeBox()">닫기</button>
+    <button id="close"> X </button>
+  </div>
+
+  <button onclick="alert1()">버튼1</button>
+  <button onclick="alert2()">버튼2</button>
+
+  <script>
+    function alert1(){
+      document.getElementById('alert').style.display = 'block';
+      document.getElementById('title').innerHTML = '아이디를 입력해주세요';
+    };
+
+    function alert2(){
+      document.getElementById('alert').style.display = 'block';
+      document.getElementById('title').innerHTML = '비밀번호를 입력해주세요.';
+      
+    };
+    
+    function closeBox(){
+      
+      document.getElementsByClassName('alert-box')[0].style.display = 'none';
+    };
+
+    document.getElementById('close').addEventListener('click', function(){
+      document.getElementsByClassName('alert-box')[0].style.display = 'none';
+    });
+  
+    /* click을 event라고 부른다 hover, scroll, mouseover 등 */
+
+    
+
+  </script>
+
+
+</body>
+</html>

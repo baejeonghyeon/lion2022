@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="03.css">
+</head>
+
+<body>
+
+  <h1 id="test">안녕하세요</h1>
+  <h1 class="hovering">마우스를 올려주세요</h1>
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <script>
+    $('#test').text(); // 출력만 하고 싶을 때
+    $('#test').text('안녕'); //id가 test인 태그의 text를 안녕으로 변경
+    $('#test').css('color', 'red');
+    $('#test').attr('class', 'yellow-bg') // (이걸 이렇게)
+    //document.querySelectorAll('#test')[0]
+  </script>
+
+  
+
+
+</body>
+</html>
